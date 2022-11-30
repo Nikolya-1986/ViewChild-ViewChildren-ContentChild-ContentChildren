@@ -1,0 +1,9 @@
+<h2>
+    Message List Component
+</h2>
+<app-message-list
+    *ngFor="let message of messages"
+    [message]="message"
+    >
+</app-message-list>
+<ng-content></ng-content>

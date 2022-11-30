@@ -1,0 +1,19 @@
+<h2>
+    Student Component
+</h2>
+<ng-container 
+    *ngFor="let student of students"
+    >
+    <app-student-detail 
+        [student]="student"
+        >
+        <ng-container 
+            *ngFor="let history of student.histories"
+            >
+            <app-student-history
+                [history]="history"
+                >
+            </app-student-history>
+        </ng-container>
+    </app-student-detail>
+</ng-container>
